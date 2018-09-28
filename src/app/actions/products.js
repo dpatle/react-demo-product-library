@@ -1,15 +1,16 @@
 import axios from 'axios';
-
+import { GET_PRODUCTS } from '../action-types';
 export function getProducts() {
+    let apiUrl = '/api/products.json';
     return (dispatch) => {
-      let products = ['one'];
-      if (products) {
-        dispatch([
-          {
-            type: 'GET_PRODUCTS',
-            payload: products
-          }
-        ]);
-      }
-    }
-  }
+        axios.get(apiUrl)
+            .then(response => {
+                dispatch({
+                    type: GET_PRODUCTS,
+                    payload: response.data
+                });
+            }, error => {
+                console.log('Error : ', error);
+            });
+    };
+}

@@ -1,0 +1,10 @@
+.tile .card-body {
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile {
+    margin-top: 25px;
+}

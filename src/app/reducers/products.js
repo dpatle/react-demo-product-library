@@ -1,6 +1,8 @@
-  export default function (state = [], action) {
+import { GET_PRODUCTS } from '../action-types';
+
+export default function (state = {}, action) {
     switch (action.type) {
-      case 'FETCH_PRODUCTS':
+      case GET_PRODUCTS:
         return {
           ...state,
           allProducts: action.payload
