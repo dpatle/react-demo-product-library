@@ -21,14 +21,12 @@ class Tile extends React.Component {
                 + tileData.priceRange.selling.high;
 
         return (
-            <div className="col-md-4 col-sm-12 d-inline-block">
-                <div className="card tile">
-                    <div className="card-header bg-primary text-white">{tileData.name}</div>
-                    <div className="card-body" style={style}></div>
-                    <div className="card-footer">
-                        <span className="text-warning">{regularPriceText}</span> <br />
-                        <span className="text-success">{sellingPriceText}</span>
-                    </div>
+            <div className="card tile">
+                <div className="card-header bg-primary text-white">{tileData.name}</div>
+                <div className="card-body" style={style}></div>
+                <div className="card-footer">
+                    <span className="text-warning">{regularPriceText}</span> <br />
+                    <span className="text-success">{sellingPriceText}</span>
                 </div>
             </div>
         );

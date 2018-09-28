@@ -1,0 +1,64 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: block;
+}
+
+.overlay .slider-image-wrapper {
+    display: inline-block;
+    height: 100%;
+}
+
+.overlay .board {
+    display: block;
+    position: absolute;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+
+.overlay .slider-image {
+    border: 10px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+}
+
+.overlay .btn {
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    margin: 25px;
+    border-radius: 25%;
+}
+
+.overlay .close-button {
+    position: fixed;
+    z-index: 1;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    right: 25px;
+    top: 25px;
+    font-size: 16px;
+}
+
+.overlay .btn:first-of-type {
+    left: 0;
+}
+
+.overlay .btn:last-of-type {
+    right: 0;
+}
