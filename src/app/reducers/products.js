@@ -7,7 +7,6 @@ export default function (state = {}, action) {
           ...state,
           allProducts: action.payload
         }
-        break;
       default:
         return state;
     }

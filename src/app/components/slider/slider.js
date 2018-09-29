@@ -61,7 +61,7 @@ class Slider extends React.Component {
                         images.map((item, index) => {
                             const className = index === this.state.currentIndex ? 'nav-indicator active' : 'nav-indicator';
                             return (
-                                    <div className={className}></div>
+                                    <div key={'nav-'+index} className={className}></div>
                             );
                         })
                     }

@@ -3,10 +3,6 @@ import React from 'react';
 import './tile.css';
 
 class Tile extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     getTile(tileData) {
         const style = {
             backgroundImage: 'URL(' + tileData.thumbnail.href + ')'
