@@ -22,3 +22,10 @@ A new browser window will be open with URL [http://localhost:3000](http://localh
 npm run build
 ```
 2. ./build folder contains the build
+
+## Running the tests
+1. Run below command in Command prompt or Terminal
+```javascript
+npm run test
+```
+2. It will show test result is terminal
