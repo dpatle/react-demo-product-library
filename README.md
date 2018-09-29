@@ -1,6 +1,6 @@
 # React Demo Product Library
 
-A library to showcase the products. Live demo is available at [http://demo2909.durgeshpatle.com](http://demo.durgeshpatle.com/react-demo-product-library)
+A library to showcase the products. Live demo is available at [http://demo2909.durgeshpatle.com](http://demo2909.durgeshpatle.com)
 
 ### Pre-Requisites
 
