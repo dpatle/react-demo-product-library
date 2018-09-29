@@ -36,15 +36,20 @@
     top: 50%;
     z-index: 1;
     margin: 25px;
-    border-radius: 25%;
+    background-image: url(../../../sprite.png);
+    height: 70px;
+    width: 45px;
+    background-color: transparent;
+    margin-top: -35px;
+}
+
+.overlay .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .overlay .close-button {
     position: fixed;
     z-index: 1;
-    background: white;
-    color: black;
-    border-radius: 50%;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -53,12 +58,38 @@
     right: 25px;
     top: 25px;
     font-size: 16px;
+    background-image: url(../../../sprite.png);
+    background-position: -346px -182px;
 }
 
 .overlay .btn:first-of-type {
     left: 0;
+    background-position: -90px -190px;
 }
 
 .overlay .btn:last-of-type {
     right: 0;
+    background-position: -15px -190px;
+}
+
+.slider-nav {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.slider-nav .nav-indicator {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.slider-nav .nav-indicator.active {
+    background-color: white;
 }

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { GET_PRODUCTS } from '../action-types';
+
 export function getProducts() {
     let apiUrl = '/api/products.json';
     return (dispatch) => {

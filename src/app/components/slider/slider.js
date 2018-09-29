@@ -52,10 +52,20 @@ class Slider extends React.Component {
                     }
                 </div>
                 {
-                    images.length > 1 ? (<React.Fragment><button type="button" className="btn btn-primary" onClick={() => { this.moveImages(-1) }}>Prev</button>
-                    <button type="button" className="btn btn-primary" onClick={() => { this.moveImages(1) }}>next</button></React.Fragment>) : null
+                    images.length > 1 ? (<React.Fragment><button type="button" className="btn" onClick={() => { this.moveImages(-1) }}></button>
+                        <button type="button" className="btn" onClick={() => { this.moveImages(1) }}></button></React.Fragment>) : null
                 }
-                <span className="close-button" onClick={() => { this.props.close(); }}>X</span>
+                <span className="close-button" onClick={() => { this.props.close(); }}></span>
+                <div className="slider-nav">
+                    {
+                        images.map((item, index) => {
+                            const className = index === this.state.currentIndex ? 'nav-indicator active' : 'nav-indicator';
+                            return (
+                                    <div className={className}></div>
+                            );
+                        })
+                    }
+                </div>
             </div >
         );
     }
